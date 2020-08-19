@@ -1,19 +1,77 @@
 <!DOCTYPE html>
 <html>
+  
   <head>
     <title>HTML training</title> <!-- defines title of document - it is shown in the browser's title bar -->
-    <style>h1 {color:red;}</style> <!-- specify CSS styling within the document -->
-    <base href="https://www.w3schools.com/" target="_blank"> <!-- base URL for all relative URLs in a document -->
-    <link rel="stylesheet" href="styles.css"> <!-- add css style sheet-->
+    <link rel="stylesheet" href="./css/style.css"> <!-- add css style sheet alternatively <style></style> can be used-->
+    <script src="./js/script.js"></script>
+    <!--<base href="www.charlieb954.github.io/html-training/"> base URL for all relative URLs in a document, target="_blank" opens in new tab/window -->
     <meta charset="UTF-8"> <!-- data about data, not shown but can be machine read -->
     <meta name="author" content="Charlie"> 
+    <noscript>Your browser does not support JavaScript!</noscript> <!-- only displays if JS is disabled-->
   </head>
+  
   <body>
-    <p id="demo"></p>
-    <script>
-      document.getElementById("demo").innerHTML = "Hello JavaScript!";
-    </script>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>  
-  </body>
+
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="main">
+    <h1>HTML & CSS training</h1>
+    <hr> <!-- adds a line break -->
+
+    <form id="form1" method="get">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <button onclick="alertName()">Alert me</button>
+    </form> 
+
+    <blockquote cite="http://www.github.com">
+      <i>I'm hosted with GitHub Pages.</i>
+    </blockquote>
+    <p><a href="https://www.github.com">Visit GitHub</a></p>
+
+    <code>
+      print('hello world')
+    </code>
+
+    <address>
+      Written by Charlie.<br>
+    </address> <!--defines the contact information renders italic and adds a <br> before-->
+    
+    <details>
+      <summary>Expand for more information</summary>
+      <p>Collapsable element</p>
+    </details> 
+
+    <img src="img_link.png" alt="No image yet" width="500" height="600"> 
+
+    <table>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+    </table> 
+
+    <ul>
+      <li>HELLO</li>
+    </ul>
+    <ol>
+      <li>WORLD!</li>
+    </ol>
+  </div>
+
+  <footer>
+    <p>Author: Charlie</p>
+  </footer> 
+
+</body>
 </html>

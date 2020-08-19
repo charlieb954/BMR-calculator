@@ -1,0 +1,60 @@
+body {
+    background-color:black;
+    color:white;
+    font-family:Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+    margin:0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+}
+
+a {
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: limegreen;
+}
+
+table {
+    margin: .3em;
+    width: 290px;
+    border: 1px solid limegreen;
+  }
+  
+th {
+padding: .2em;
+border: 1px solid limegreen;
+}
+
+td {
+padding-left: .5em;
+padding-right: .5em;
+border: 1px solid limegreen;
+background-color:black;
+}
