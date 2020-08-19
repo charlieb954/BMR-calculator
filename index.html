@@ -2,7 +2,8 @@
 <html>
   
   <head>
-    <title>HTML training</title> <!-- defines title of document - it is shown in the browser's title bar -->
+    <title>BMR Calculator</title> <!-- defines title of document - it is shown in the browser's title bar -->
+    <link rel="shortcut icon" href="./img/favicon.ico" />
     <link rel="stylesheet" href="./css/style.css"> <!-- add css style sheet alternatively <style></style> can be used-->
     <script src="./js/script.js"></script>
     <!--<base href="www.charlieb954.github.io/html-training/"> base URL for all relative URLs in a document, target="_blank" opens in new tab/window -->
@@ -19,20 +20,69 @@
     </div>
 
     <div class="main">
-    <h1>HTML & CSS training</h1>
+    <h1>BMR calculator</h1>
     <hr> <!-- adds a line break -->
 
     <form id="form1" method="get">
-      <label for="fname">First name:</label>
-      <input type="text" id="fname" name="fname"><br><br>
-      <label for="lname">Last name:</label>
-      <input type="text" id="lname" name="lname"><br><br>
-      <button onclick="alertName()">Alert me</button>
+      <label for="gender">Gender:</label>
+      <select name="gensel" id="gensel">
+        <option value="m">Male</option>
+        <option value="f">Female</option>
+      </select><br><br>
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age"><br><br>
+      <label for="weight">Weight (in lbs):</label>
+      <input type="text" id="weight" name="weight"><br><br>
+      <label for="height">Height (in inches):</label>
+      <input type="text" id="height" name="height"><br><br>
+      <label for="activity">Activity level (1-5):</label>
+      <select name="actsel" id="actsel">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <br><br>
+      <button type="button" onclick="calculateBMR()">Calculate BMR</button>
     </form> 
+
+    <p id="demo"></p>
+
+    <details>
+      <summary>Expand for activity level table</summary>
+    <table>
+      <tr>
+        <th>Activity Level</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Little to no exercise</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Light exercise 1-3 times a week/td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Moderate exercise 3-5 times a week/td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Hard exercise 6-7 times a week</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Hard exercise 6-7 times a week and a physical job</td>
+      </tr>
+    </table> 
+  </details> 
 
     <blockquote cite="http://www.github.com">
       <i>I'm hosted with GitHub Pages.</i>
     </blockquote>
+
     <p><a href="https://www.github.com">Visit GitHub</a></p>
 
     <code>
@@ -42,24 +92,8 @@
     <address>
       Written by Charlie.<br>
     </address> <!--defines the contact information renders italic and adds a <br> before-->
-    
-    <details>
-      <summary>Expand for more information</summary>
-      <p>Collapsable element</p>
-    </details> 
 
     <img src="img_link.png" alt="No image yet" width="500" height="600"> 
-
-    <table>
-      <tr>
-        <th>Month</th>
-        <th>Savings</th>
-      </tr>
-      <tr>
-        <td>January</td>
-        <td>$100</td>
-      </tr>
-    </table> 
 
     <ul>
       <li>HELLO</li>

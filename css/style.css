@@ -1,5 +1,5 @@
 body {
-    background-color:black;
+    background-color:#333;
     color:white;
     font-family:Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
     margin:0;
@@ -7,7 +7,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
   position: fixed;
   top: 0;
   width: 100%;
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 
 table {
     margin: .3em;
-    width: 290px;
+    width: 50%;
     border: 1px solid limegreen;
   }
   
@@ -56,5 +56,19 @@ td {
 padding-left: .5em;
 padding-right: .5em;
 border: 1px solid limegreen;
-background-color:black;
 }
+
+label{
+display: inline-block;
+width: 30%;
+margin-right:10px;
+text-align:left;
+}
+
+#gensel{
+  width:148px;   
+ }
+
+#actsel{
+  width:148px;   
+ }
