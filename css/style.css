@@ -1,8 +1,47 @@
+/* GENERAL STYLING */
 body {
-    background-color:#333;
-    color:white;
-    font-family:Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
-    margin:0;
+  background-color:#333;
+  color:white;
+  font-family:Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+  margin:0;
+}
+
+a {
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: limegreen;
+}
+
+table {
+  margin: .3em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 1px solid limegreen;
+}
+
+th {
+  padding: .2em;
+  border: 1px solid limegreen;
+}
+
+td {
+  padding-left: .5em;
+  padding-right: .5em;
+  border: 1px solid limegreen;
+}
+
+label {
+  display: inline-block;
+  width: 50%;
+  margin-right:10px;
+  text-align:left;
+}
+
+input {
+  width: 25%;
 }
 
 .navbar {
@@ -13,6 +52,25 @@ body {
   width: 100%;
 }
 
+section {
+  display: flex; 
+  flex-direction: row;
+}
+
+summary {
+  color: limegreen;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+}
+
+/* NAVIGATION PANEL */
 .navbar a {
   float: left;
   display: block;
@@ -33,42 +91,15 @@ body {
   margin-top: 30px;
 }
 
-a {
-    color: white;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: limegreen;
-}
-
-table {
-    margin: .3em;
-    width: 50%;
-    border: 1px solid limegreen;
-  }
-  
-th {
-padding: .2em;
-border: 1px solid limegreen;
-}
-
-td {
-padding-left: .5em;
-padding-right: .5em;
-border: 1px solid limegreen;
-}
-
-label{
-display: inline-block;
-width: 30%;
-margin-right:10px;
-text-align:left;
-}
-
-#gensel{
-  width:148px;   
+/* SPECIFIC ID ELEMENTS */
+#gensel, #actsel{
+  width:25%;   
  }
 
-#actsel{
-  width:148px;   
- }
+#leftdiv, #rightdiv {
+  margin: auto; /* used as flex */
+  width: 50%;
+  /*display: inline-block;  side by side and can specify width */
+  /*display: block;  spans the whole width of page */
+  /*display: inline;  side by side but cannot specify width */
+}
