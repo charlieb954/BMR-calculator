@@ -23,13 +23,13 @@ function calculateBMR() {
     if (gender == "m") {
         gender = "Male"
         bmr = Math.round((66.47 + (6.24 * weight) + (12.7 * height) - (6.755 * age)));
-        act_bmr = bmr * activity_dict[activity];
+        act_bmr = Math.round(bmr * activity_dict[activity]);
       } 
 
     else {
         gender = "Female"
         bmr = Math.round((655.1 + (4.35 * weight) + (4.7 * height) - (4.7 * age)));
-        act_bmr = bmr * activity_dict[activity];
+        act_bmr = Math.round(bmr * activity_dict[activity]);
     }
 
     if (isNaN(bmr)) {
