@@ -51,6 +51,34 @@ function calculateBMR() {
     document.getElementById("results").innerHTML = resp;
 }
 
+function calculateBMI() {
+  var weight = document.getElementById("weight").value;
+  var height = document.getElementById("height").value;
+  var bmi ;
+
+  if (weight == "" || height == "" ) {
+      alert("Please complete all fields");
+      return false;
+    }
+
+  else {
+    bmi = (weight / (height * height)) * 703;
+    bmi = bmi.toFixed(2)
+    }
+
+  if (isNaN(bmi)) {
+      alert('Please check the parameters you have entered and try again');
+      return false;
+    }
+
+  resp = `<h3>Your details:</h3>
+  <p>Weight: ${weight}, Height: ${height}</p>
+  <h3>Your results:</h3>
+  <p>BMI = ${bmi}</p>`;
+
+  document.getElementById("results").innerHTML = resp;
+}
+
 function darkMode() {
   var element = document.body;
   var link = document.getElementById("link");
