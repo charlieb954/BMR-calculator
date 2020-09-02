@@ -20,104 +20,29 @@
 
     <div class="navbar">
       <a href="index.html">Home</a>
+      <a href="bmr.html">BMR Calculator</a>
+      <a href="bmi.html">BMI Calculator</a>
       <a href="contact.html">Contact</a>
     </div>
 
     <div class="main">
-      <h1>BMR Calculator</h1>
+      <h1>Home</h1>
       <hr> <!-- adds a line break -->
 
-      <section>
-        <div id="leftdiv">
-          <form id="form1" method="get">
-            <label for="gender">Gender:</label>
-            <select name="gensel" id="gensel">
-              <option value="m">Male</option>
-              <option value="f">Female</option>
-            </select><br><br>
-            <label for="age">Age:</label>
-            <input type="text" id="age" name="age"><br><br>
-            <label for="weight">Weight (in lbs):</label>
-            <input type="text" id="weight" name="weight"><br><br>
-            <label for="height">Height (in inches):</label>
-            <input type="text" id="height" name="height"><br><br>
-            <label for="activity">Activity level (1-5):</label>
-            <select name="actsel" id="actsel">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-            <br><br>
-            <div class="wrapper">
-              <button type="button" onclick="calculateBMR()">Calculate BMR</button>
-            </div>
-          </form> 
-        </div>
-
-        <div id="rightdiv">
-          <p id="results"></p>
-        </div>
-      </section>
-
-    <br>
-
-    <details>
-      <summary>
-        Expand for activity level table
-      </summary>
-      <table>
-        <tr>
-        <th>Activity Level</th>
-        <th>Description</th>
-        </tr>
-        <tr>
-        <td>1</td>
-        <td>Little to no exercise</td>
-        </tr>
-        <tr>
-        <td>2</td>
-        <td>Light exercise 1-3 times a week</td>
-        </tr>
-        <tr>
-        <td>3</td>
-        <td>Moderate exercise 3-5 times a week</td>
-        </tr>
-        <tr>
-        <td>4</td>
-        <td>Hard exercise 6-7 times a week</td>
-        </tr>
-        <tr>
-        <td>5</td>
-        <td>Hard exercise 6-7 times a week and a physical job</td>
-        </tr>
-      </table> 
-    </details>
-
-    <br>
-
-    <details>
-      <summary>
-        Calculated using the Harris-Benedict BMR formula, expand to see:
-      </summary>
-      <code>
-        <p>Men: BMR = 66.47 + (6.24 × weight in pounds) + (12.7 × height in inches) – (6.755 × age in years)</p>
-        <p>Women: BMR = 655.1 + (4.35 × weight in pounds) + (4.7 × height in inches) – (4.7 × age in years)</p>
-        <br><p>In order to account for activity levels, the resulting BMR will be multiplied by 1.2, 1.375, 1.55, 1.725, 1.9 retrospectively</p>
-      </code>
-    </details>
-
+      <p>Please use the navigation bar at the top of the page to use the BMR and BMI calculators.</p>
     </div>
 
+    
+
     <br>
 
-    <footer>
-      <blockquote cite="http://www.github.com">
-        <button onclick="darkMode()">Toggle dark mode</button>
-        <p><a href="https://www.github.com/charlieb954" id="link">Visit Charlie's GitHub</a></p>
-      </blockquote>
-    </footer> 
+      <footer>
+        <blockquote cite="http://www.github.com">
+          <button onclick="darkMode()">Toggle dark mode</button>
+          <p><a href="https://www.github.com/charlieb954" id="link">Visit Charlie's GitHub</a></p>
+        </blockquote>
+      </footer> 
+        
 
   </body>
 </html>
