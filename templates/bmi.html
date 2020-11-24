@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>
+      BMI Calculator
+    </title> <!-- defines title of document - it is shown in the browser's title bar -->
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css"> <!-- add css style sheet alternatively <style></style> can be used-->
+    <script src="./js/script.js"></script>
+    <!--<base href="www.charlieb954.github.io/html-training/"> base URL for all relative URLs in a document, target="_blank" opens in new tab/window -->
+    <meta charset="UTF-8"> <!-- data about data, not shown but can be machine read -->
+    <meta name="author" content="Charlie"> 
+    <noscript>
+      Your browser does not support JavaScript!
+    </noscript> <!-- only displays if JS is disabled-->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <a href="templates/index.html">Home</a>
+      <a href="templates/bmr.html">BMR Calculator</a>
+      <a href="templates/bmi.html">BMI Calculator</a>
+      <a href="templates/contact.html">Contact</a>
+    </div>
+
+    <div class="main">
+      <h1>BMI Calculator</h1>
+      <hr> <!-- adds a line break -->
+
+      <section>
+        <div id="leftdiv">
+          <h3>Enter details:</h3>
+          <form id="form1" method="get">
+            <label for="weight">Weight (in lbs):</label>
+            <input type="text" id="weight" name="weight"><br><br>
+            <label for="height">Height (in inches):</label>
+            <input type="text" id="height" name="height"><br><br>
+            <br><br>
+            <div class="wrapper">
+              <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+            </div>
+          </form> 
+        </div>
+
+        <div id="rightdiv">
+          <p id="results"></p>
+        </div>
+      </section>
+
+    <br>
+
+    <details>
+      <summary>
+        What does your BMI mean? Expand to see:
+      </summary>
+      <table>
+        <tr>
+        <th>BMI</th>
+        <th>Description</th>
+        </tr>
+        <tr>
+        <td>Below 18.5</td>
+        <td>Underweight</td>
+        </tr>
+        <tr>
+        <td>18.5 to 24.9</td>
+        <td>Normal or healthy weight</td>
+        </tr>
+        <tr>
+        <td>25 to 29.9</td>
+        <td>Overweight</td>
+        </tr>
+        <tr>
+        <td>30 and above</td>
+        <td>Obese</td>
+        </tr>
+      </table> 
+    </details>
+
+    <br>
+
+    <details>
+      <summary>
+        Calculated using the Adolphe Quetelet BMI formula, expand to see:
+      </summary>
+      <code>
+        <p>BMI = [Weight (lbs) / Height (inches)²] x 703</p>
+      </code>
+    </details>
+
+    </div>
+
+    <br>
+
+    <footer>
+      <blockquote cite="http://www.github.com">
+        <button onclick="darkMode()">Toggle dark mode</button>
+        <p><a href="https://www.github.com/charlieb954" id="link">Visit Charlie's GitHub</a></p>
+      </blockquote>
+    </footer> 
+
+  </body>
+</html>
